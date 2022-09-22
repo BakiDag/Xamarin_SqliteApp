@@ -5,11 +5,11 @@ namespace SqliteApp.Standard
 {
     public class DatabaseContext : DbContext
     {
-        public DbSet<Products> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         private readonly string _databasePath;
 
-        public DatabaseContext(string databasePath) 
+        public DatabaseContext(string databasePath)
         {
             _databasePath = databasePath;
 
